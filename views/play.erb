@@ -1,1 +1,11 @@
-<%= @player_1_name %> vs. <%= @player_2_name %>
+<h1>Here's today's line-up...</h1>
+
+
+<%= @player_1_name %> vs. <%= @player_2_name %> <br>
+Player 2 health: <%= @player_2_health %>
+
+<h2>who's going to win...</h2>
+
+<form action='/attacked' method='get'>
+  <input type='submit' value='ATTACK!'>
+</form>
